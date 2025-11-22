@@ -21,17 +21,19 @@ const firaCode = Fira_Code({
   variable: "--font-firaCode",
 });
 
+const fonts = [fontSans, jersey10, firaCode];
+
 const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
-      <div
-        className={`${fontSans.variable} ${jersey10.variable} ${firaCode.variable} font-sans`}
+      <main
+        className={`font-sans ` + fonts.map((font) => font.variable).join(" ")}
       >
         <Component {...pageProps} />
-      </div>
+      </main>
     </QueryClientProvider>
   );
 }

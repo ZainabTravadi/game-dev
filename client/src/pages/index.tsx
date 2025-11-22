@@ -12,7 +12,7 @@ export default function Home() {
   });
 
   return (
-    <main className={cn("flex min-h-screen flex-col items-center gap-4 p-24")}>
+    <div className={cn("flex min-h-screen flex-col items-center gap-4 p-24")}>
       <h1 className="font-jersey10 text-4xl text-primary">Test title</h1>
       <h2 className="font-firaCode text-xl text-secondary">Test subtitle</h2>
       <Button onClick={() => setClicked(true)}>
@@ -21,6 +21,6 @@ export default function Home() {
       <p>
         Response from server: <span>{data as string}</span>
       </p>
-    </main>
+    </div>
   );
 }
