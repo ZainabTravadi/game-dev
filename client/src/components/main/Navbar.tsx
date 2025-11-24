@@ -9,24 +9,29 @@ export default function Navbar() {
 
   return (
     <div className="flex flex-row items-center border border-white/10">
-      <div className="flex w-[30%] flex-row items-center justify-center gap-2">
-        <Image
-          src="/navbar_arr.svg"
-          alt="logo"
-          width={24}
-          height={24}
-          className="h-6 w-6"
-        />
-        <span className="sr-only">Game Development UWA</span>
-        <span aria-hidden="true" className="whitespace-nowrap md:hidden">
-          {" "}
-          GDUWA
-        </span>
-        <span aria-hidden="true" className="hidden whitespace-nowrap md:inline">
-          {" "}
-          Game Development UWA _
-        </span>
-      </div>
+      <Link href="/">
+        <div className="flex w-[30%] flex-row items-center justify-center gap-2">
+          <Image
+            src="/navbar_arr.svg"
+            alt="logo"
+            width={24}
+            height={24}
+            className="h-6 w-6"
+          />
+          <span className="sr-only">Game Development UWA</span>
+          <span aria-hidden="true" className="whitespace-nowrap md:hidden">
+            {" "}
+            GDUWA
+          </span>
+          <span
+            aria-hidden="true"
+            className="hidden whitespace-nowrap md:inline"
+          >
+            {" "}
+            Game Development UWA _
+          </span>
+        </div>
+      </Link>
 
       <div className="w-[20%]"></div>
 
