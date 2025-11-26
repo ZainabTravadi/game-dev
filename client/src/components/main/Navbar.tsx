@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed left-0 top-0 z-50 w-full border-b border-border/20 bg-[#090A19] font-jersey10">
+      <header className="sticky top-0 z-50 w-full border-b border-border/20 bg-background font-jersey10">
         <div className="mx-auto flex h-[104px] max-w-[1440px] items-center justify-between rounded-[5px] px-20">
           <Link href="/" className="flex flex-none items-center gap-3 text-2xl">
             <Image
@@ -80,8 +80,6 @@ export default function Navbar() {
           </div>
         </div>
       </header>
-
-      <div aria-hidden="true" className="h-[104px] w-full"></div>
     </>
   );
 }
