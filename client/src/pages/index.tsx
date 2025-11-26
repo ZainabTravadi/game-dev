@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import Navbar from "@/components/main/Navbar";
 import { usePings } from "@/hooks/pings";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +13,6 @@ export default function Home() {
 
   return (
     <div className={cn("flex min-h-screen flex-col items-center gap-4 p-24")}>
-      <Navbar />
       <h1 className="font-jersey10 text-4xl text-primary">Test title</h1>
       <h2 className="font-firaCode text-xl text-secondary">Test subtitle</h2>
       <Button onClick={() => setClicked(true)}>
