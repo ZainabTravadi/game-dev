@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border/20 bg-background font-jersey10">
-        <div className="mx-auto flex h-[104px] max-w-[1440px] items-center justify-between rounded-[5px] px-20">
+        <div className="mx-auto flex h-24 max-w-7xl items-center justify-between rounded-md px-20">
           <Link href="/" className="flex flex-none items-center gap-3 text-2xl">
             <Image
               src="/game_dev_club_logo.svg"
